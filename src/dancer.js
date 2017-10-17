@@ -35,6 +35,13 @@ MakeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+MakeDancer.prototype.lineUp = function() {
+//debugger;  
+  
+  this.$node.css({right: 200, position: 'absolute'});
+  //$("#mydiv").css({top: 200, left: 200, position:'absolute'});
+};
+
 
 
 // // Creates and returns a new dancer object that can step

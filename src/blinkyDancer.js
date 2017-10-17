@@ -17,6 +17,14 @@ MakeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
 };
 
+MakeBlinkyDancer.prototype.lineUp = function() {  
+  this.$node.css({top: 200, position: 'absolute'});
+};
+
+//MakeBlinkyDancer.prototype.lineUpBottom = function() {  
+//  this.$node.css({bottom: 200, position: 'absolute'});
+//};
+
   
 // // FUNCTIONAL ------------------------------------------------ 
 //  var oldStep = blinkyDancer.step;

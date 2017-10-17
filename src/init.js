@@ -28,10 +28,25 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
-    console.log(dancer.$node);
+    //console.log(dancer.$node);
+    // Added  
     window.dancers.push(dancer);
   });
-});
+
+  $('.lineUpButton').on('click', function(event) {
+      //var dancers = window.dancers;
+      //var topDancers = dancers.slice(0,dancers.length-1/2);
+      //var bottomDancers = dancers.slice(dancers.length-1/2);
+
+      for (var i = 0; i < window.dancers.length; i ++){
+        window.dancers[i].lineUp();   
+      }
+//      for (var i = 0; i < window.bottomDancers.length; i ++){
+//        window.dancers[i].lineUpBottom();   
+//      }
+
+    });
+  });
 
 
 

@@ -26,3 +26,9 @@ MakeBouncyDancer.prototype.step = function() {
     this.$node.animate({'marginLeft': '+=50px', 'marginTop': '-=50px'}, 1000);
     this.$node.animate({'marginLeft': '-=50px', 'marginTop': '+=50px'}, 1000);
 };
+
+MakeBouncyDancer.prototype.lineUp = function() {
+//debugger;  
+  
+  this.$node.css({top: 200, position: 'absolute'});
+};
