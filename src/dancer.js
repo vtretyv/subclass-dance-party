@@ -11,6 +11,10 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   
   this.step(timeBetweenSteps);
   this.setPosition(top, left);
+
+  $( ".inner" ).wrapInner( "<div class='new'></div>");
+  this.$node.wrapInner('<img class="img1" src="marioGif.gif"></img>');
+
 };
 
 MakeDancer.prototype.step = function(timeBetweenSteps) {

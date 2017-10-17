@@ -5,23 +5,48 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url("dancefloor.jpg");
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+ 
+/* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
+
 .topbar{
   height:32px;
   background-color: #555;
 }
+
 .title{
   background-color: #777;
 }
+
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  
   position:absolute;
+  /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/8a/c9/54/8ac954b2a750b07ccbcb2de352af6c5a.jpg');*/
+}
+
+.bouncyDancer{
+  position: absolute;
+
+  /*background-color: blue;
+  border:10px solid blue;
+  border-radius:10px;*/
+}
+.img1 {
+  height: 10%;
+  width: 10%;
 }
