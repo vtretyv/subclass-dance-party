@@ -6,13 +6,13 @@ body{
   background-color:#444;
   font-size: 18px;
   background-image: url("dancefloor.jpg");
+  width: 100%;
 }
+
 body, a:link, a:visited, a:active{
-  color: lightblue;
- 
+  color: lightblue; 
 /* Full height */
     height: 100%; 
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -47,6 +47,26 @@ body, a:link, a:visited, a:active{
   border-radius:10px;*/
 }
 .img1 {
-  height: 10%;
-  width: 10%;
+  height: 5vh;
+  width: 5vw;
+}
+.img2 {
+  height: 8vh;
+  width: 8vw;
+}
+.moonwalk{
+  height: 20vh;
+  width: 20vw;
+}
+
+.battleLeft{
+  position: fixed;
+  top: 50%;
+  right: 45%;
+}
+
+.battleRight{
+  position: fixed;
+  top: 50%;
+  right: 55%;
 }

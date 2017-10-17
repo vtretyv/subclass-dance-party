@@ -3,6 +3,7 @@ var MakeFadeDancer = function(top, left, timeBetweenSteps) {
   
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
+  this.$node.wrapInner('<img class="img1" src="bmo.gif"></img>');
   this.$node.addClass('bouncyDancer');
 };
 
@@ -26,4 +27,8 @@ MakeFadeDancer.prototype.lineUp = function() {
 //debugger;  
   
   this.$node.css({top: 200, position: 'absolute'});
+};
+
+MakeFadeDancer.prototype.lineUpBottom = function() {  
+  this.$node.css({top: 800, position: 'absolute'});
 };

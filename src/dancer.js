@@ -12,9 +12,7 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this.step(timeBetweenSteps);
   this.setPosition(top, left);
 
-  $( ".inner" ).wrapInner( "<div class='new'></div>");
-  this.$node.wrapInner('<img class="img1" src="marioGif.gif"></img>');
-
+  //this.$node.wrapInner('<img class="img1" src="marioGif.gif"></img>');
 };
 
 MakeDancer.prototype.step = function(timeBetweenSteps) {
@@ -41,6 +39,7 @@ MakeDancer.prototype.lineUp = function() {
   this.$node.css({right: 200, position: 'absolute'});
   //$("#mydiv").css({top: 200, left: 200, position:'absolute'});
 };
+
 
 
 
