@@ -18,8 +18,7 @@ MakeFadeDancer.prototype.step = function() {
   
     this.$node.fadeIn(1000);
     this.$node.fadeOut(1000);
-    //this.$node.animate({'top': 'top-=50px'}, 1000);
-    //this.$node.animate({'top': 'top+=50px'}, 1000);
+
 };
 
 

@@ -5,7 +5,6 @@ var MakeMoonWalkerDancer = function(top, left, timeBetweenSteps) {
   // so we must keep a copy of the old version of this function
   
   this.$node.addClass('moonwalkingDancer');
-  $( ".inner" ).wrapInner( "<div class='new'></div>");
   this.$node.wrapInner('<img class="moonwalk" src="ross.gif"></img>');
 };
 
@@ -27,3 +26,7 @@ MakeMoonWalkerDancer.prototype.lineUp = function() {
 MakeMoonWalkerDancer.prototype.lineUpBottom = function() {  
   this.$node.css({top: 800, position: 'absolute'});
 };
+
+
+
+//$('span.dancer').mouseover(console.log("moused over"));

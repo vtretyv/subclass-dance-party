@@ -39,6 +39,11 @@ body, a:link, a:visited, a:active{
   /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/8a/c9/54/8ac954b2a750b07ccbcb2de352af6c5a.jpg');*/
 }
 
+.dancerMouseOver{
+  border-style: solid;
+  transform: rotateY(180deg);
+}
+
 /* EASY WAY TO HOVER
 .dancer:hover{
   border-style: solid;
@@ -49,7 +54,7 @@ body, a:link, a:visited, a:active{
 
 .bouncyDancer{
   position: absolute;
-
+  
   /*background-color: blue;
   border:10px solid blue;
   border-radius:10px;*/
@@ -67,7 +72,10 @@ body, a:link, a:visited, a:active{
   width: 20vw;
 }
 
-.battleLeft{
+span {
+display:inline-block;
+}
+/*.battleLeft{
   position: fixed;
   top: 50%;
   right: 45%;
@@ -77,4 +85,4 @@ body, a:link, a:visited, a:active{
   position: fixed;
   top: 50%;
   right: 55%;
-}
+}*/

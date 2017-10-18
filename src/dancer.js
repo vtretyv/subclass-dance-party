@@ -11,7 +11,7 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   
   this.step(timeBetweenSteps);
   this.setPosition(top, left);
-
+  this.$node.onmouseover = function(){console.log("mouseover went off")};
   //this.$node.wrapInner('<img class="img1" src="marioGif.gif"></img>');
 };
 

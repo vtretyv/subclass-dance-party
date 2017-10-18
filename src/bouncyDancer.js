@@ -37,3 +37,4 @@ MakeBouncyDancer.prototype.lineUp = function() {
 MakeBouncyDancer.prototype.lineUpBottom = function() {  
   this.$node.css({top: 800, position: 'absolute'});
 };
+
