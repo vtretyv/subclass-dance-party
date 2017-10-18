@@ -2,6 +2,7 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('.addDancerButton').on('click', function(event) {
+    console.log("added a dancer");
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -31,6 +32,7 @@ $(document).ready(function() {
     //console.log(dancer.$node);
     // Added  
     window.dancers.push(dancer);
+    console.log($('.dancer'));
   });
 
   $('.lineUpButton').on('click', function(event) {
@@ -68,23 +70,18 @@ $(document).ready(function() {
       var yDistance;
       var distance;
       var shortestPath = [];
-      var middleHeight = ($("body").height())/2;
-      var middleWidth1 = ($("body").width())/2 -100;
-      var middleWidth2 = ($("body").width())/2 +100;
+      
       for (var i = 0; i < window.dancers.length; i++) {
         for (var j = 0; j < window.dancers.length; j ++) {
           if (i ==j){
-            console.log("indexes are equal, in the if")
+    
             continue;
             } else {
                 console.log("in the else")
                 xDistance = Math.pow((window.dancers[i].left - window.dancers[j].left),2) 
                 yDistance = Math.pow((window.dancers[i].top - window.dancers[j].top),2)
                 distance = Math.sqrt(xDistance + yDistance);
-                console.log(xDistance, "xDistance")
-                console.log(yDistance, "yDistance")           
-                console.log(minDistance, "minDistance")
-                console.log(distance, "distance");
+    
                 if (minDistance > distance){
                   shortestPath = [];
                   minDistance = distance;
@@ -95,12 +92,27 @@ $(document).ready(function() {
           }
         }
     
-      console.log(shortestPath[0]);
-      shortestPath[0].$node.css({'position': 'absolute', 'top': middleHeight,'right': middleWidth1,'bottom': middleHeight,'left': middleWidth1});
-      shortestPath[1].$node.css({'position': 'absolute', 'top': middleHeight,'right': middleWidth2,'bottom': middleHeight,'left': middleWidth2});
+      shortestPath[0].$node.css({'position': 'absolute', 'top': '50vh','right': '50vw','bottom': '50vh','left': '45vw'});
+      // JL - should have added Class left battle dancer + right battle dancer
+      shortestPath[1].$node.css({'position': 'absolute', 'top': '50vh','right': '50vw','bottom': '50vh','left': '55vw'});
     
     });
 
+
+
+// Every dancer has 'dancer' class from makeDancer (dancer.js)
+// jQuery grab any span element with 'dancer'
+// on hover, make the element do something.
+
+  // $('span.dancer').on('mouseover', function(event) {
+  //    console.log(this);
+ 
+  // });
+
+console.log($('.dancer'));
+  $('.dancer').on('mouseover', function(event){
+    console.log("mouseover went off");
+  });
 
 
 });

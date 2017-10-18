@@ -39,6 +39,14 @@ body, a:link, a:visited, a:active{
   /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/8a/c9/54/8ac954b2a750b07ccbcb2de352af6c5a.jpg');*/
 }
 
+/* EASY WAY TO HOVER
+.dancer:hover{
+  border-style: solid;
+  border-color: red;
+  position:absolute;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/8a/c9/54/8ac954b2a750b07ccbcb2de352af6c5a.jpg');
+}*/
+
 .bouncyDancer{
   position: absolute;
 
