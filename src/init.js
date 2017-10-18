@@ -28,9 +28,11 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    
+    //JL - new dancers are appended to body
     $('body').append(dancer.$node);
-    //console.log(dancer.$node);
-    // Added  
+
+    //JL - push a new dancer to the window.dancers array
     window.dancers.push(dancer);
 
   });
